@@ -1,0 +1,33 @@
+<h1>Listing bingos</h1>
+
+<table>
+  <tr>
+    <th>Lectivo</th>
+    <th>Rne</th>
+    <th>Recibo</th>
+    <th>Fechapago</th>
+    <th>Montopago</th>
+    <th>Posteadopor</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bingos.each do |bingo| %>
+  <tr>
+    <td><%= bingo.lectivo %></td>
+    <td><%= bingo.rne %></td>
+    <td><%= bingo.recibo %></td>
+    <td><%= bingo.fechapago %></td>
+    <td><%= bingo.montopago %></td>
+    <td><%= bingo.posteadopor %></td>
+    <td><%= link_to 'Show', bingo %></td>
+    <td><%= link_to 'Edit', edit_bingo_path(bingo) %></td>
+    <td><%= link_to 'Destroy', bingo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bingo', new_bingo_path %>

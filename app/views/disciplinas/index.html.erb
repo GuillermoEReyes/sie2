@@ -1,0 +1,35 @@
+<h1>Listing disciplinas</h1>
+
+<table>
+  <tr>
+    <th>Lectivo</th>
+    <th>Rne</th>
+    <th>Fechasancion</th>
+    <th>Motivosancion</th>
+    <th>Maestrosancion</th>
+    <th>Firmasancion</th>
+    <th>Tipodisciplina</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @disciplinas.each do |disciplina| %>
+  <tr>
+    <td><%= disciplina.lectivo %></td>
+    <td><%= disciplina.rne %></td>
+    <td><%= disciplina.fechaSancion %></td>
+    <td><%= disciplina.motivoSancion %></td>
+    <td><%= disciplina.maestroSancion %></td>
+    <td><%= disciplina.firmaSancion %></td>
+    <td><%= disciplina.tipoDisciplina %></td>
+    <td><%= link_to 'Show', disciplina %></td>
+    <td><%= link_to 'Edit', edit_disciplina_path(disciplina) %></td>
+    <td><%= link_to 'Destroy', disciplina, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Disciplina', new_disciplina_path %>

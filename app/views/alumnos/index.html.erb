@@ -1,0 +1,67 @@
+<h1>Listing alumnos</h1>
+
+<table>
+  <tr>
+    <th>Idfamilia</th>
+    <th>Escuelaproviene</th>
+    <th>Rne</th>
+    <th>Nombres</th>
+    <th>Apellido1</th>
+    <th>Apellido2</th>
+    <th>Fechanacimiento</th>
+    <th>Genero</th>
+    <th>Mano</th>
+    <th>Lugarnacimiento</th>
+    <th>Departamento</th>
+    <th>Municipio</th>
+    <th>Nacionalidad</th>
+    <th>Pais</th>
+    <th>Religion</th>
+    <th>Colonia</th>
+    <th>Avenida</th>
+    <th>Calle</th>
+    <th>Casa</th>
+    <th>Esrepitente</th>
+    <th>Esbecado</th>
+    <th>Eshijomaestro</th>
+    <th>Retirado</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @alumnos.each do |alumno| %>
+  <tr>
+    <td><%= alumno.IdFamilia %></td>
+    <td><%= alumno.EscuelaProviene %></td>
+    <td><%= alumno.rne %></td>
+    <td><%= alumno.nombres %></td>
+    <td><%= alumno.apellido1 %></td>
+    <td><%= alumno.apellido2 %></td>
+    <td><%= alumno.fechaNacimiento %></td>
+    <td><%= alumno.genero %></td>
+    <td><%= alumno.mano %></td>
+    <td><%= alumno.lugarNacimiento %></td>
+    <td><%= alumno.departamento %></td>
+    <td><%= alumno.municipio %></td>
+    <td><%= alumno.nacionalidad %></td>
+    <td><%= alumno.pais %></td>
+    <td><%= alumno.religion %></td>
+    <td><%= alumno.colonia %></td>
+    <td><%= alumno.avenida %></td>
+    <td><%= alumno.calle %></td>
+    <td><%= alumno.casa %></td>
+    <td><%= alumno.esRepitente %></td>
+    <td><%= alumno.esBecado %></td>
+    <td><%= alumno.esHijoMaestro %></td>
+    <td><%= alumno.retirado %></td>
+    <td><%= link_to 'Show', alumno %></td>
+    <td><%= link_to 'Edit', edit_alumno_path(alumno) %></td>
+    <td><%= link_to 'Destroy', alumno, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Alumno', new_alumno_path %>

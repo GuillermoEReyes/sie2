@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  lectivo: MyString
+  rne: MyString
+  fechaSancion: 2013-03-31
+  motivoSancion: MyText
+  maestroSancion: MyString
+  firmaSancion: false
+  tipoDisciplina: MyString
+
+two:
+  lectivo: MyString
+  rne: MyString
+  fechaSancion: 2013-03-31
+  motivoSancion: MyText
+  maestroSancion: MyString
+  firmaSancion: false
+  tipoDisciplina: MyString

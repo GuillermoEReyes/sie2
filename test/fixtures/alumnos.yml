@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  IdFamilia: MyString
+  EscuelaProviene: MyString
+  rne: MyString
+  nombres: MyString
+  apellido1: MyString
+  apellido2: MyString
+  fechaNacimiento: 2013-03-31
+  genero: MyString
+  mano: MyString
+  lugarNacimiento: MyString
+  departamento: MyString
+  municipio: MyString
+  nacionalidad: MyString
+  pais: MyString
+  religion: MyString
+  colonia: MyString
+  avenida: MyString
+  calle: MyString
+  casa: MyString
+  esRepitente: false
+  esBecado: false
+  esHijoMaestro: false
+  retirado: false
+
+two:
+  IdFamilia: MyString
+  EscuelaProviene: MyString
+  rne: MyString
+  nombres: MyString
+  apellido1: MyString
+  apellido2: MyString
+  fechaNacimiento: 2013-03-31
+  genero: MyString
+  mano: MyString
+  lugarNacimiento: MyString
+  departamento: MyString
+  municipio: MyString
+  nacionalidad: MyString
+  pais: MyString
+  religion: MyString
+  colonia: MyString
+  avenida: MyString
+  calle: MyString
+  casa: MyString
+  esRepitente: false
+  esBecado: false
+  esHijoMaestro: false
+  retirado: false

@@ -1,0 +1,45 @@
+<%= form_for(@disciplina) do |f| %>
+  <% if @disciplina.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@disciplina.errors.count, "error") %> prohibited this disciplina from being saved:</h2>
+
+      <ul>
+      <% @disciplina.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :lectivo %><br />
+    <%= f.text_field :lectivo %>
+  </div>
+  <div class="field">
+    <%= f.label :rne %><br />
+    <%= f.text_field :rne %>
+  </div>
+  <div class="field">
+    <%= f.label :fechaSancion %><br />
+    <%= f.date_select :fechaSancion %>
+  </div>
+  <div class="field">
+    <%= f.label :motivoSancion %><br />
+    <%= f.text_area :motivoSancion %>
+  </div>
+  <div class="field">
+    <%= f.label :maestroSancion %><br />
+    <%= f.text_field :maestroSancion %>
+  </div>
+  <div class="field">
+    <%= f.label :firmaSancion %><br />
+    <%= f.check_box :firmaSancion %>
+  </div>
+  <div class="field">
+    <%= f.label :tipoDisciplina %><br />
+    <%= f.text_field :tipoDisciplina %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

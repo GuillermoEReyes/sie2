@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Codigo:</b>
+  <%= @materia.codigo %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%= @materia.descripcion %>
+</p>
+
+<p>
+  <b>Nivel:</b>
+  <%= @materia.nivel %>
+</p>
+
+<p>
+  <b>Orden:</b>
+  <%= @materia.orden %>
+</p>
+
+<p>
+  <b>Materiatipo:</b>
+  <%= @materia.materiaTipo %>
+</p>
+
+
+<%= link_to 'Edit', edit_materia_path(@materia) %> |
+<%= link_to 'Back', materias_path %>

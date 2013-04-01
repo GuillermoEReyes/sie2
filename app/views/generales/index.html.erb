@@ -1,0 +1,41 @@
+<h1>Listing generales</h1>
+
+<table>
+  <tr>
+    <th>Lectivoactual</th>
+    <th>Idsistema</th>
+    <th>Noplanocci</th>
+    <th>Cobrazaocci</th>
+    <th>Nombrearchivoocci</th>
+    <th>Bimestreactual</th>
+    <th>Notasweb</th>
+    <th>Tienebingo</th>
+    <th>Tienepapeleria</th>
+    <th>Boletaimpresa</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @generales.each do |general| %>
+  <tr>
+    <td><%= general.lectivoActual %></td>
+    <td><%= general.idsistema %></td>
+    <td><%= general.noPlanOcci %></td>
+    <td><%= general.cobrazaOcci %></td>
+    <td><%= general.nombreArchivoOcci %></td>
+    <td><%= general.bimestreActual %></td>
+    <td><%= general.notasweb %></td>
+    <td><%= general.tieneBingo %></td>
+    <td><%= general.tienePapeleria %></td>
+    <td><%= general.boletaImpresa %></td>
+    <td><%= link_to 'Show', general %></td>
+    <td><%= link_to 'Edit', edit_general_path(general) %></td>
+    <td><%= link_to 'Destroy', general, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New General', new_general_path %>

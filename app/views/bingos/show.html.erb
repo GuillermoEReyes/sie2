@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Lectivo:</b>
+  <%= @bingo.lectivo %>
+</p>
+
+<p>
+  <b>Rne:</b>
+  <%= @bingo.rne %>
+</p>
+
+<p>
+  <b>Recibo:</b>
+  <%= @bingo.recibo %>
+</p>
+
+<p>
+  <b>Fechapago:</b>
+  <%= @bingo.fechapago %>
+</p>
+
+<p>
+  <b>Montopago:</b>
+  <%= @bingo.montopago %>
+</p>
+
+<p>
+  <b>Posteadopor:</b>
+  <%= @bingo.posteadopor %>
+</p>
+
+
+<%= link_to 'Edit', edit_bingo_path(@bingo) %> |
+<%= link_to 'Back', bingos_path %>

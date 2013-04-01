@@ -1,0 +1,29 @@
+<h1>Listing cursos</h1>
+
+<table>
+  <tr>
+    <th>Codigo</th>
+    <th>Descripcion</th>
+    <th>Tipo</th>
+    <th>Codigo siguiente curso</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cursos.each do |curso| %>
+  <tr>
+    <td><%= curso.codigo %></td>
+    <td><%= curso.descripcion %></td>
+    <td><%= curso.tipo %></td>
+    <td><%= curso.codigo_siguiente_curso %></td>
+    <td><%= link_to 'Show', curso %></td>
+    <td><%= link_to 'Edit', edit_curso_path(curso) %></td>
+    <td><%= link_to 'Destroy', curso, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Curso', new_curso_path %>

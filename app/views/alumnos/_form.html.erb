@@ -1,0 +1,109 @@
+<%= form_for(@alumno) do |f| %>
+  <% if @alumno.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@alumno.errors.count, "error") %> prohibited this alumno from being saved:</h2>
+
+      <ul>
+      <% @alumno.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :IdFamilia %><br />
+    <%= f.text_field :IdFamilia %>
+  </div>
+  <div class="field">
+    <%= f.label :EscuelaProviene %><br />
+    <%= f.text_field :EscuelaProviene %>
+  </div>
+  <div class="field">
+    <%= f.label :rne %><br />
+    <%= f.text_field :rne %>
+  </div>
+  <div class="field">
+    <%= f.label :nombres %><br />
+    <%= f.text_field :nombres %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido1 %><br />
+    <%= f.text_field :apellido1 %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido2 %><br />
+    <%= f.text_field :apellido2 %>
+  </div>
+  <div class="field">
+    <%= f.label :fechaNacimiento %><br />
+    <%= f.date_select :fechaNacimiento %>
+  </div>
+  <div class="field">
+    <%= f.label :genero %><br />
+    <%= f.text_field :genero %>
+  </div>
+  <div class="field">
+    <%= f.label :mano %><br />
+    <%= f.text_field :mano %>
+  </div>
+  <div class="field">
+    <%= f.label :lugarNacimiento %><br />
+    <%= f.text_field :lugarNacimiento %>
+  </div>
+  <div class="field">
+    <%= f.label :departamento %><br />
+    <%= f.text_field :departamento %>
+  </div>
+  <div class="field">
+    <%= f.label :municipio %><br />
+    <%= f.text_field :municipio %>
+  </div>
+  <div class="field">
+    <%= f.label :nacionalidad %><br />
+    <%= f.text_field :nacionalidad %>
+  </div>
+  <div class="field">
+    <%= f.label :pais %><br />
+    <%= f.text_field :pais %>
+  </div>
+  <div class="field">
+    <%= f.label :religion %><br />
+    <%= f.text_field :religion %>
+  </div>
+  <div class="field">
+    <%= f.label :colonia %><br />
+    <%= f.text_field :colonia %>
+  </div>
+  <div class="field">
+    <%= f.label :avenida %><br />
+    <%= f.text_field :avenida %>
+  </div>
+  <div class="field">
+    <%= f.label :calle %><br />
+    <%= f.text_field :calle %>
+  </div>
+  <div class="field">
+    <%= f.label :casa %><br />
+    <%= f.text_field :casa %>
+  </div>
+  <div class="field">
+    <%= f.label :esRepitente %><br />
+    <%= f.check_box :esRepitente %>
+  </div>
+  <div class="field">
+    <%= f.label :esBecado %><br />
+    <%= f.check_box :esBecado %>
+  </div>
+  <div class="field">
+    <%= f.label :esHijoMaestro %><br />
+    <%= f.check_box :esHijoMaestro %>
+  </div>
+  <div class="field">
+    <%= f.label :retirado %><br />
+    <%= f.check_box :retirado %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

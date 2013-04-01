@@ -1,0 +1,57 @@
+<%= form_for(@general) do |f| %>
+  <% if @general.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@general.errors.count, "error") %> prohibited this general from being saved:</h2>
+
+      <ul>
+      <% @general.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :lectivoActual %><br />
+    <%= f.text_field :lectivoActual %>
+  </div>
+  <div class="field">
+    <%= f.label :idsistema %><br />
+    <%= f.text_field :idsistema %>
+  </div>
+  <div class="field">
+    <%= f.label :noPlanOcci %><br />
+    <%= f.text_field :noPlanOcci %>
+  </div>
+  <div class="field">
+    <%= f.label :cobrazaOcci %><br />
+    <%= f.text_field :cobrazaOcci %>
+  </div>
+  <div class="field">
+    <%= f.label :nombreArchivoOcci %><br />
+    <%= f.text_field :nombreArchivoOcci %>
+  </div>
+  <div class="field">
+    <%= f.label :bimestreActual %><br />
+    <%= f.text_field :bimestreActual %>
+  </div>
+  <div class="field">
+    <%= f.label :notasweb %><br />
+    <%= f.check_box :notasweb %>
+  </div>
+  <div class="field">
+    <%= f.label :tieneBingo %><br />
+    <%= f.check_box :tieneBingo %>
+  </div>
+  <div class="field">
+    <%= f.label :tienePapeleria %><br />
+    <%= f.check_box :tienePapeleria %>
+  </div>
+  <div class="field">
+    <%= f.label :boletaImpresa %><br />
+    <%= f.check_box :boletaImpresa %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

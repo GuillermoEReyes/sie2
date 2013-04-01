@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  lectivoActual: MyString
+  idsistema: MyString
+  noPlanOcci: MyString
+  cobrazaOcci: MyString
+  nombreArchivoOcci: MyString
+  bimestreActual: MyString
+  notasweb: false
+  tieneBingo: false
+  tienePapeleria: false
+  boletaImpresa: false
+
+two:
+  lectivoActual: MyString
+  idsistema: MyString
+  noPlanOcci: MyString
+  cobrazaOcci: MyString
+  nombreArchivoOcci: MyString
+  bimestreActual: MyString
+  notasweb: false
+  tieneBingo: false
+  tienePapeleria: false
+  boletaImpresa: false

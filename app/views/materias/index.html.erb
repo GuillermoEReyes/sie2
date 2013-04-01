@@ -1,0 +1,31 @@
+<h1>Listing materias</h1>
+
+<table>
+  <tr>
+    <th>Codigo</th>
+    <th>Descripcion</th>
+    <th>Nivel</th>
+    <th>Orden</th>
+    <th>Materiatipo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @materias.each do |materia| %>
+  <tr>
+    <td><%= materia.codigo %></td>
+    <td><%= materia.descripcion %></td>
+    <td><%= materia.nivel %></td>
+    <td><%= materia.orden %></td>
+    <td><%= materia.materiaTipo %></td>
+    <td><%= link_to 'Show', materia %></td>
+    <td><%= link_to 'Edit', edit_materia_path(materia) %></td>
+    <td><%= link_to 'Destroy', materia, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Materia', new_materia_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  lectivo: MyString
+  rne: MyString
+  recibo: MyString
+  fechapago: 2013-03-31
+  montopago: 9.99
+  posteadopor: MyString
+
+two:
+  lectivo: MyString
+  rne: MyString
+  recibo: MyString
+  fechapago: 2013-03-31
+  montopago: 9.99
+  posteadopor: MyString
