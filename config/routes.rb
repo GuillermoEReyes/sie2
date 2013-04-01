@@ -1,4 +1,25 @@
 Sie2::Application.routes.draw do
+  resources :materias
+
+
+  resources :generales
+
+
+  resources :alumnos
+
+
+  resources :familias
+
+
+  resources :disciplinas
+
+
+  resources :cursos
+
+
+  resources :bingos
+
+
   resources :maestros
 
 
