@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  codigo: MyString
+  slogan: MyString
+  valor1p: 
+  valor2p: 
+  valor3p: 
+  valor4p: 
+  valor_aprobado: 
+
+two:
+  codigo: MyString
+  slogan: MyString
+  valor1p: 
+  valor2p: 
+  valor3p: 
+  valor4p: 
+  valor_aprobado: 

@@ -1,0 +1,29 @@
+<h1>Listing maestros</h1>
+
+<table>
+  <tr>
+    <th>Login</th>
+    <th>Password</th>
+    <th>Nombre</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @maestros.each do |maestro| %>
+  <tr>
+    <td><%= maestro.login %></td>
+    <td><%= maestro.password %></td>
+    <td><%= maestro.nombre %></td>
+    <td><%= maestro.email %></td>
+    <td><%= link_to 'Show', maestro %></td>
+    <td><%= link_to 'Edit', edit_maestro_path(maestro) %></td>
+    <td><%= link_to 'Destroy', maestro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Maestro', new_maestro_path %>
